@@ -6,7 +6,7 @@
   },
   "FILE_MAP": {
     {% for english_name, chinese_name in countries %}    
-    "{{english_name|replace(' ', '_', 'g')}}": "{{english_name|replace(' ', '_', 'g')}}.js",
+    "{{english_name|replace(' ', '_', 'g')}}": "{{english_name|replace(' ', '_', 'g')}}",
     {% endfor %}
   }
 }
