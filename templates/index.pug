@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title #{num_countries} countries and regions
+    meta(charset="utf-8")
+    style(type="text/css").
+      .map{
+         width: 300px;
+         height: 300px;
+      }
+      body {
+         background-color: #eee;
+      }
+    script(src="echarts.min.js")
+    each country in countryFiles
+      script(src=country)
+  body
+    table
+      tr
+        each country, index in countries
+          if index % 4 == 0
+            | </tr><tr>
+          td
+            div(id=country,class="map")
+    script(src="demo.js")
+    script
+      each country in countries
+        | make_map( "#{country}" ,"#{country}");
+        |

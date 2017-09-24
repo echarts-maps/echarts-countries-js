@@ -1,0 +1,12 @@
+{
+  "PINYIN_MAP": {
+    {% for english_name, chinese_name in countries %}    
+    "{{chinese_name}}": "{{english_name|replace(' ', '_', 'g')}}",
+    {% endfor %}
+  },
+  "FILE_MAP": {
+    {% for english_name, chinese_name in countries %}    
+    "{{english_name|replace(' ', '_', 'g')}}": "{{english_name|replace(' ', '_', 'g')}}.js",
+    {% endfor %}
+  }
+}
