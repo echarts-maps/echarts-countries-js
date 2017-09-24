@@ -54,6 +54,10 @@ $ npm install
 $ gulp
 ```
 
+## Credit and geojson source
+
+[pissang](https://github.com/pissang) and his [starbucks](https://github.com/pissang/starbucks) project.
+
 ## License
 
 Unlicense. No guarantee, no liability and no politics provided. You use it at your own risk.
