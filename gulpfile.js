@@ -262,7 +262,7 @@ gulp.task('config', function(){
   });
   Object.keys(pinyin_map).forEach(function(key){
     var myKey = pinyin_map[key];
-    file_map[myKey] = myKey + ".js";
+    file_map[myKey] = myKey;
   });
   var config = {
     PINYIN_MAP: pinyin_map,
