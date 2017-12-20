@@ -25,12 +25,12 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 	  height: 100%;
 	  }
 	</style>
-  	<script src="https://chfw.github.io/echarts-countries-js/echarts.min.js"></script>
-	<script src="https://chfw.github.io/echarts-countries-js/dist/France.js"></script>
+  	<script src="https://pyecharts.github.io/echarts-countries-js/echarts.min.js"></script>
+	<script src="https://pyecharts.github.io/echarts-countries-js/dist/France.js"></script>
   </head>
   <body>
 	<div id='france' class='citymap'></div>
-	<script src='https://chfw.github.io/echarts-countries-js/demo.js'></script>
+	<script src='https://pyecharts.github.io/echarts-countries-js/demo.js'></script>
 	<script>
 	  make_map('法国', 'france');
 	</script>
@@ -38,13 +38,13 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 </html>
 ```
 
-![Usage with echarts](https://chfw.github.io/echarts-countries-js/France.png)
+![Usage with echarts](https://pyecharts.github.io/echarts-countries-js/France.png)
 
 ## Featuring Cities(or for Single Download)
 
 Cities:
 {% for english_name, chinese_name in countries %}
-1. [{{chinese_name}}](https://chfw.github.io/echarts-countries-js/dist/{{english_name|replace(' ', '_', 'g')}}.js) ({{english_name}}) {% endfor %}
+1. [{{chinese_name}}](https://pyecharts.github.io/echarts-countries-js/dist/{{english_name|replace(' ', '_', 'g')}}.js) ({{english_name}}) {% endfor %}
 
 
 ## Development
