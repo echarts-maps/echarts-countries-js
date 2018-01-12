@@ -237,7 +237,7 @@ gulp.task("default", ["readme", "config", "template"], function() {
         if(!countryChineseName){
           console.log("Ignored " + countryName);
         }else{
-          maker.compress(filePath, path.join('dist', countryFile + ".js"), countryChineseName);
+          maker.compress(filePath, path.join('echarts-countries-js', countryFile + ".js"), countryChineseName);
         }
       }
     });
@@ -268,7 +268,7 @@ gulp.task('config', function(){
     PINYIN_MAP: pinyin_map,
     FILE_MAP: file_map
   }
-  fs.writeFile(path.join("dist", "config.json"), JSON.stringify(config, null, 4), function(err){
+  fs.writeFile(path.join("echarts-countries-js", "config.json"), JSON.stringify(config, null, 4), function(err){
     if (err) throw err;
   });
 });
