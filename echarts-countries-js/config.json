@@ -428,5 +428,8 @@
         "Yemen": "Yemen",
         "Zambia": "Zambia",
         "Zimbabwe": "Zimbabwe"
-    }
+    },
+    "JUPYTER_URL": "/nbextensions/echarts-countries-js",
+    "JUPYTER_ENTRY": "echarts-countries-js/index",
+    "GITHUB_URL": "https://pyecharts.github.io/echarts-countries-js/echarts-countries-js"
 }

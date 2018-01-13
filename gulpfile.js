@@ -266,7 +266,10 @@ gulp.task('config', function(){
   });
   var config = {
     PINYIN_MAP: pinyin_map,
-    FILE_MAP: file_map
+    FILE_MAP: file_map,
+    JUPYTER_URL: '/nbextensions/echarts-countries-js',
+    JUPYTER_ENTRY: 'echarts-countries-js/index',
+    GITHUB_URL: 'https://pyecharts.github.io/echarts-countries-js/echarts-countries-js'
   }
   fs.writeFile(path.join("echarts-countries-js", "config.json"), JSON.stringify(config, null, 4), function(err){
     if (err) throw err;
