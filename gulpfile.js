@@ -271,7 +271,7 @@ gulp.task('config', function(){
     JUPYTER_ENTRY: 'echarts-countries-js/index',
     GITHUB_URL: 'https://pyecharts.github.io/echarts-countries-js/echarts-countries-js'
   }
-  fs.writeFile(path.join("echarts-countries-js", "config.json"), JSON.stringify(config, null, 4), function(err){
+  fs.writeFile(path.join("echarts-countries-js", "registry.json"), JSON.stringify(config, null, 4), function(err){
     if (err) throw err;
   });
 });
