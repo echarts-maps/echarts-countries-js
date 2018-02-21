@@ -5,6 +5,8 @@ var maker = require("./node_modules/echarts-mapmaker/src/maker");
 const glob = require("glob");
 const pug = require("pug");
 const template = require("swig");
+var rename = require('gulp-rename');
+var minify = require("gulp-minify");
 
 
 LOCATION = "./starbucks/json";
@@ -49,7 +51,6 @@ NAMES = {
   "Central African Republic": "中非共和国",
   "Chad": "乍得",
   "Chile": "智利",
-  "China": "中国",
   "Colombia": "哥伦比亚",
   "Comoros": "科摩罗",
   "Congo-Brazzaville": "刚果-布拉柴维尔",
@@ -225,7 +226,7 @@ NAMES = {
   "Zimbabwe": "津巴布韦"
 }
 
-gulp.task("default", ["readme", "config", "template"], function() {
+gulp.task("default", ["readme", "world", "config", "template"], function() {
   glob(LOCATION + '/*.json', function(err, files){
     if(err) throw err;
     files.forEach( (filePath) => {
@@ -264,6 +265,8 @@ gulp.task('config', function(){
     var myKey = pinyin_map[key];
     file_map[myKey] = myKey;
   });
+  file_map['china'] = 'China';
+  file_map['world'] = 'world';
   var config = {
     PINYIN_MAP: pinyin_map,
     FILE_MAP: file_map,
@@ -290,18 +293,33 @@ gulp.task('template', function(){
       var countryName = countryFile.replace(/_/g, ' ');
       var countryChineseName = NAMES[countryName];
       if(countryName in NAMES){
-        countryFiles.push('dist/' + countryFile + '.js');
+        countryFiles.push('echarts-countries-js/' + countryFile + '.js');
         countryNames.push(NAMES[countryName]);
       }else{
         console.log("Ignored " + countryName);
       }
     });
+    countryFiles.push('echarts-countries-js/china.js');
+    countryFiles.push('echarts-countries-js/world.js');
+    countryNames.push('china');
+    countryNames.push('world');
     var index = pug.compileFile(path.join("templates", "index.pug"));
-    var options = {num_countries:countryFiles.length,
+    var options = {num_countries: countryFiles.length,
                    countryFiles: countryFiles,
                    countries: countryNames};
     fs.writeFile('preview.html', index(options), function(err){
       if(err) throw err;
     });
   });
+});
+
+
+gulp.task('world', function(){
+  gulp.src(['./node_modules/echarts/map/js/world.js', './node_modules/echarts/map/js/china.js'])
+    .pipe(rename({dirname: ''}))
+	.pipe(minify({
+      noSource: true,
+	  ext: { min: ".js"}
+	}))
+	.pipe(gulp.dest('echarts-countries-js'));
 });
