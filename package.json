@@ -1,6 +1,6 @@
 {
   "name": "echarts-countries-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Packages all countries for front end developers",
   "main": "main.js",
   "scripts": {
