@@ -265,7 +265,7 @@ gulp.task('config', function(){
     var myKey = pinyin_map[key];
     file_map[myKey] = myKey;
   });
-  file_map['china'] = 'China';
+  file_map['china'] = 'china';
   file_map['world'] = 'world';
   var config = {
     PINYIN_MAP: pinyin_map,

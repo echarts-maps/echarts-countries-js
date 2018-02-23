@@ -426,7 +426,7 @@
         "Yemen": "Yemen",
         "Zambia": "Zambia",
         "Zimbabwe": "Zimbabwe",
-        "china": "China",
+        "china": "china",
         "world": "world"
     },
     "JUPYTER_URL": "/nbextensions/echarts-countries-js",
