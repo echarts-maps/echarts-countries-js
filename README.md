@@ -25,14 +25,14 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 	  height: 100%;
 	  }
 	</style>
-  	<script src="https://pyecharts.github.io/echarts-countries-js/echarts.min.js"></script>
-	<script src="https://pyecharts.github.io/echarts-countries-js/dist/France.js"></script>
+  	<script src="https://echarts-maps.github.io/echarts-countries-js/echarts.min.js"></script>
+	<script src="https://echarts-maps.github.io/echarts-countries-js/echarts-countries-js/Switzerland.js"></script>
   </head>
   <body>
-	<div id='france' class='citymap'></div>
-	<script src='https://pyecharts.github.io/echarts-countries-js/demo.js'></script>
+	<div id='map' class='citymap'></div>
+	<script src='demo.js'></script>
 	<script>
-	  make_map('法国', 'france');
+	  make_map('瑞士', 'map');
 	</script>
   </body>
 </html>
