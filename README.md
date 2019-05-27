@@ -36,27 +36,6 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 	</script>
   </body>
 </html>
-
-<html>
-  <head>
-    <meta charset="utf-8" />
-	<style>
-	  .citymap{
-	  width: 100%;
-	  height: 100%;
-	  }
-	</style>
-  	<script src="https://pyecharts.github.io/echarts-countries-js/echarts.min.js"></script>
-	<script src="https://pyecharts.github.io/echarts-countries-js/dist/France.js"></script>
-  </head>
-  <body>
-	<div id='france' class='citymap'></div>
-	<script src='https://pyecharts.github.io/echarts-countries-js/demo.js'></script>
-	<script>
-	  make_map('法国', 'france');
-	</script>
-  </body>
-</html>
 ```
 
 ![Usage with echarts](https://echarts-maps.github.io/echarts-countries-js/demo.png)
