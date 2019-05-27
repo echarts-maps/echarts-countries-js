@@ -239,7 +239,7 @@ gulp.task("default", ["readme", "world", "config", "template"], function() {
         if(!countryChineseName){
           console.log("Ignored " + countryName);
         }else{
-          maker.compress(filePath, path.join('echarts-countries-js', countryFile + ".js"), countryChineseName);
+          maker.makeJs(filePath, path.join('echarts-countries-js', countryFile + ".js"), countryChineseName);
         }
       }
     });
