@@ -38,7 +38,7 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 </html>
 ```
 
-![Usage with echarts](https://pyecharts.github.io/echarts-countries-js/demo.png)
+![Usage with echarts](https://echarts-maps.github.io/echarts-countries-js/demo.png)
 
 ## Featuring Cities(or for Single Download)
 
