@@ -273,7 +273,7 @@ gulp.task('config', function(){
     FILE_MAP: file_map,
     JUPYTER_URL: '/nbextensions/echarts-countries-js',
     JUPYTER_ENTRY: 'echarts-countries-js/index',
-    GITHUB_URL: 'https://echarts-maps.github.io/echarts-countries-js/echarts-countries-js',
+    GITHUB_URL: 'https://echarts-maps.github.io/echarts-countries-js',
     JS_FOLDER: 'echarts-countries-js'
   }
   fs.writeFile("registry.json", JSON.stringify(config, null, 4), function(err){
