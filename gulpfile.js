@@ -193,6 +193,7 @@ NAMES = {
   "Sudan": "苏丹",
   "Suriname": "苏里南",
   "Swaziland": "史瓦济兰",
+  "Switzerland": "瑞士",
   "Sweden": "瑞典",
   "Syria": "叙利亚",
   "Tajikistan": "塔吉克斯坦",
@@ -303,6 +304,8 @@ gulp.task('template', function(){
     countryFiles.push('echarts-countries-js/world.js');
     countryNames.push('china');
     countryNames.push('world');
+    countryFiles.push('echarts-countries-js/Switzerland.js');
+    countryNames.push('瑞士');
     var index = pug.compileFile(path.join("templates", "index.pug"));
     var options = {num_countries: countryFiles.length,
                    countryFiles: countryFiles,
@@ -314,8 +317,8 @@ gulp.task('template', function(){
 });
 
 gulp.task('switzerland', function() {
-  maker.makeJs('geojson/shape-with-internal-borders/switzerland.geojson', 'switzerland.js', '瑞士');
-  gulp.src('switzerland.js', {base: '.'})
+  maker.makeJs('geojson/shape-with-internal-borders/switzerland.geojson', 'Switzerland.js', '瑞士');
+  gulp.src('Switzerland.js', {base: '.'})
 	.pipe(minify({
       noSource: true,
 	  ext: { min: ".js"}
