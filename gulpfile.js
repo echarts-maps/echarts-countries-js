@@ -313,6 +313,15 @@ gulp.task('template', function(){
   });
 });
 
+gulp.task('switzerland', function() {
+  maker.makeJs('geojson/shape-with-internal-borders/switzerland.geojson', 'switzerland.js', '瑞士');
+  gulp.src('switzerland.js', {base: '.'})
+	.pipe(minify({
+      noSource: true,
+	  ext: { min: ".js"}
+	}))
+	.pipe(gulp.dest('echarts-countries-js'));
+});
 
 gulp.task('world', function(){
   gulp.src(['./node_modules/echarts/map/js/world.js', './node_modules/echarts/map/js/china.js'])
