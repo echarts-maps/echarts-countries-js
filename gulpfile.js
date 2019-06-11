@@ -306,6 +306,8 @@ gulp.task('template', function(){
     countryNames.push('world');
     countryFiles.push('echarts-countries-js/Switzerland.js');
     countryNames.push('瑞士');
+    countryFiles.push('echarts-countries-js/eckert3-world.js');
+    countryNames.push('eckert3-world');
     var index = pug.compileFile(path.join("templates", "index.pug"));
     var options = {num_countries: countryFiles.length,
                    countryFiles: countryFiles,
@@ -334,4 +336,14 @@ gulp.task('world', function(){
 	  ext: { min: ".js"}
 	}))
 	.pipe(gulp.dest('echarts-countries-js'));
+});
+
+gulp.task('custom-world', function(){
+  maker.makeJs('geojson/shape-with-internal-borders/eckert3-world.geojson', 'eckert3-world.js', 'eckert3-world');
+  gulp.src('eckert3-world.js', {base: '.'})
+	.pipe(minify({
+      noSource: true,
+	  ext: { min: ".js"}
+	}))
+	.pipe(gulp.dest('echarts-countries-js'));  
 });
