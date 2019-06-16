@@ -268,6 +268,7 @@ gulp.task('config', function(){
   });
   file_map['china'] = 'china';
   file_map['world'] = 'world';
+  file_map['eckert3-world'] = 'eckert3-world';
   var config = {
     PINYIN_MAP: pinyin_map,
     FILE_MAP: file_map,

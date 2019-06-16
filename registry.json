@@ -429,7 +429,8 @@
         "Zambia": "Zambia",
         "Zimbabwe": "Zimbabwe",
         "china": "china",
-        "world": "world"
+        "world": "world",
+        "eckert3-world": "eckert3-world"
     },
     "JUPYTER_URL": "/nbextensions/echarts-countries-js",
     "JUPYTER_ENTRY": "echarts-countries-js/index",
