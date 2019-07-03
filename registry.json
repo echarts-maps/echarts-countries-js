@@ -430,7 +430,8 @@
         "Zimbabwe": "Zimbabwe",
         "china": "china",
         "world": "world",
-        "eckert3-world": "eckert3-world"
+        "eckert3-world": "eckert3-world",
+        "china-cities": "china-cities"
     },
     "JUPYTER_URL": "/nbextensions/echarts-countries-js",
     "JUPYTER_ENTRY": "echarts-countries-js/index",

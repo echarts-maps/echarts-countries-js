@@ -269,6 +269,7 @@ gulp.task('config', function(){
   file_map['china'] = 'china';
   file_map['world'] = 'world';
   file_map['eckert3-world'] = 'eckert3-world';
+  file_map['china-cities'] = 'china-cities';
   var config = {
     PINYIN_MAP: pinyin_map,
     FILE_MAP: file_map,
@@ -309,6 +310,8 @@ gulp.task('template', function(){
     countryNames.push('瑞士');
     countryFiles.push('echarts-countries-js/eckert3-world.js');
     countryNames.push('eckert3-world');
+    countryFiles.push('echarts-countries-js/china-cities.js');
+    countryNames.push('china-cities');
     var index = pug.compileFile(path.join("templates", "index.pug"));
     var options = {num_countries: countryFiles.length,
                    countryFiles: countryFiles,
@@ -347,4 +350,14 @@ gulp.task('custom-world', function(){
 	  ext: { min: ".js"}
 	}))
 	.pipe(gulp.dest('echarts-countries-js'));  
+});
+
+gulp.task('china-cities', function() {
+  maker.makeJs('./node_modules/echarts/map/json/china-cities.json', 'china-cities.js', 'china-cities');
+  gulp.src('china-cities.js', {base: '.'})
+	.pipe(minify({
+      noSource: true,
+	  ext: { min: ".js"}
+	}))
+	.pipe(gulp.dest('echarts-countries-js'));
 });
