@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/echarts-countries-js.svg)](https://badge.fury.io/js/echarts-countries-js)
 
 It collects all geo-jsons in javascript of 213 countries and regions
-and acts as a static asset to jupyter-echarts or your echarts collection.
+and acts as a static asset to jupyter-echarts or your [Apache ECharts (incubating)](https://github.com/apache/incubator-echarts) collection.
 
 ## Installation
 
