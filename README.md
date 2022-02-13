@@ -275,6 +275,9 @@ Switzerland map comes from [natural earth data](https://www.naturalearthdata.com
 
 ## License
 
-Unlicense. No guarantee, no liability and no politics provided. You use it at your own risk.
+ODC Open Database License (ODbL)
+
+
+## Note
 
 This projects is NOT associated with official Apache ECharts (incubating) project and is independently maintained by [@chfw](https://github.com/chfw).
