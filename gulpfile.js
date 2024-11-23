@@ -51,7 +51,6 @@ NAMES = {
   "Central African Republic": "中非共和国",
   "Chad": "乍得",
   "Chile": "智利",
-  "Colombia": "哥伦比亚",
   "Comoros": "科摩罗",
   "Congo-Brazzaville": "刚果-布拉柴维尔",
   "Congo-Kinshasa": "刚果金",
@@ -225,7 +224,7 @@ NAMES = {
   "Zimbabwe": "津巴布韦"
 }
 
-gulp.task("default", ["readme", "world", "config", "template", "italy", "switzerland", "tanzania"], function() {
+gulp.task("default", ["readme", "world", "config", "template","colombia", "italy", "switzerland", "tanzania"], function() {
   glob(LOCATION + '/*.json', function(err, files){
     if(err) throw err;
     files.forEach( (filePath) => {
@@ -310,6 +309,8 @@ gulp.task('template', function(){
     countryNames.push('意大利');
     countryFiles.push('echarts-countries-js/Tanzania.js');
     countryNames.push('坦桑尼亚');
+    countryFiles.push('echarts-countries-js/Colombia.js');
+    countryNames.push('哥伦比亚');
     countryFiles.push('echarts-countries-js/eckert3-world.js');
     countryNames.push('eckert3-world');
     countryFiles.push('echarts-countries-js/china-cities.js');
@@ -346,6 +347,16 @@ gulp.task('italy', function() {
 gulp.task('tanzania', function() {
   maker.makeJs('geojson/shape-with-internal-borders/tanzania.geojson', 'Tanzania.js', '坦桑尼亚');
   gulp.src('Tanzania.js', {base: '.'})
+	.pipe(minify({
+      noSource: true,
+	  ext: { min: ".js"}
+	}))
+	.pipe(gulp.dest('echarts-countries-js'));
+});
+
+gulp.task('colombia', function() {
+  maker.makeJs('geojson/shape-with-internal-borders/colombia.geojson', 'Colombia.js', '哥伦比亚');
+  gulp.src('Colombia.js', {base: '.'})
 	.pipe(minify({
       noSource: true,
 	  ext: { min: ".js"}

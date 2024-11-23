@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/echarts-countries-js.svg)](https://badge.fury.io/js/echarts-countries-js)
 
-It collects all geo-jsons in javascript of 211 countries and regions
+It collects all geo-jsons in javascript of 210 countries and regions
 and acts as a static asset to jupyter-echarts or your echarts collection.
 
 ## Installation
@@ -83,7 +83,6 @@ Cities:
 1. [中非共和国](https://pyecharts.github.io/echarts-countries-js/dist/Central_African_Republic.js) (Central African Republic) 
 1. [乍得](https://pyecharts.github.io/echarts-countries-js/dist/Chad.js) (Chad) 
 1. [智利](https://pyecharts.github.io/echarts-countries-js/dist/Chile.js) (Chile) 
-1. [哥伦比亚](https://pyecharts.github.io/echarts-countries-js/dist/Colombia.js) (Colombia) 
 1. [科摩罗](https://pyecharts.github.io/echarts-countries-js/dist/Comoros.js) (Comoros) 
 1. [刚果-布拉柴维尔](https://pyecharts.github.io/echarts-countries-js/dist/Congo-Brazzaville.js) (Congo-Brazzaville) 
 1. [刚果金](https://pyecharts.github.io/echarts-countries-js/dist/Congo-Kinshasa.js) (Congo-Kinshasa) 
@@ -267,7 +266,7 @@ $ gulp
 
 ## Credit and geojson source
 
-Italy, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
+Italy, Tanzania, Colombia, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 
 Other maps come from [pissang](https://github.com/pissang) and his [starbucks](https://github.com/pissang/starbucks) project.
 
