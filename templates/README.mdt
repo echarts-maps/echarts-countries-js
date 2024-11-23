@@ -44,7 +44,7 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 
 Cities:
 {% for english_name, chinese_name in countries %}
-1. [{{chinese_name}}](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/{{english_name|replace(' ', '_', 'g')}}.js) ({{english_name}}) {% endfor %}
+1. [{{chinese_name}}](https://echarts-maps.github.io/echarts-countries-js/preview.html#{{chinese_name}}) ([{{english_name}}](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/{{english_name|replace(' ', '_', 'g')}}.js)) {% endfor %}
 
 ## Development
 
@@ -56,7 +56,7 @@ $ gulp
 
 ## Credit and geojson source
 
-Italy, Tanzania, Colombia, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
+Italy, Tanzania, Colombia, Nauru, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 
 Other maps come from [pissang](https://github.com/pissang) and his [starbucks](https://github.com/pissang/starbucks) project.
 
