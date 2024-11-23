@@ -44,8 +44,7 @@ This library will be included in [pyecharts](https://github.com/chenjiandongx/py
 
 Cities:
 {% for english_name, chinese_name in countries %}
-1. [{{chinese_name}}](https://pyecharts.github.io/echarts-countries-js/dist/{{english_name|replace(' ', '_', 'g')}}.js) ({{english_name}}) {% endfor %}
-
+1. [{{chinese_name}}](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/{{english_name|replace(' ', '_', 'g')}}.js) ({{english_name}}) {% endfor %}
 
 ## Development
 
