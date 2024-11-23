@@ -179,7 +179,6 @@
         "苏丹": "Sudan",
         "苏里南": "Suriname",
         "史瓦济兰": "Swaziland",
-        "瑞士": "Switzerland",
         "瑞典": "Sweden",
         "叙利亚": "Syria",
         "塔吉克斯坦": "Tajikistan",
@@ -209,7 +208,11 @@
         "越南": "Vietnam",
         "也门": "Yemen",
         "赞比亚": "Zambia",
-        "津巴布韦": "Zimbabwe"
+        "津巴布韦": "Zimbabwe",
+        "意大利": "Italy",
+        "哥伦比亚": "Colombia",
+        "坦桑尼亚": "Tanzania",
+        "瑞士": "Switzerland"
     },
     "FILE_MAP": {
         "Afghanistan": "Afghanistan",
@@ -391,7 +394,6 @@
         "Sudan": "Sudan",
         "Suriname": "Suriname",
         "Swaziland": "Swaziland",
-        "Switzerland": "Switzerland",
         "Sweden": "Sweden",
         "Syria": "Syria",
         "Tajikistan": "Tajikistan",

@@ -214,7 +214,6 @@ NAMES = {
   "Sudan": "苏丹",
   "Suriname": "苏里南",
   "Swaziland": "史瓦济兰",
-  "Switzerland": "瑞士",
   "Sweden": "瑞典",
   "Syria": "叙利亚",
   "Tajikistan": "塔吉克斯坦",
@@ -268,7 +267,11 @@ gulp.task("default", ["readme", "world", "config", "template","naturalEarth"], f
 
 gulp.task('readme', function(){
   var tmpl = template.compileFile(path.join('templates', 'README.mdt'));
-  var options = {num_cities: Object.keys(NAMES).length, countries: NAMES};
+  var countries = JSON.parse(JSON.stringify(NAMES));
+   NATURAL_EARTH.forEach( (item) => {
+     countries[item['label']] = item['zhong_wen']
+  });  
+  var options = {num_cities: Object.keys(countries).length, countries: countries};
   fs.writeFile("README.md", tmpl(options), function(err){
     if(err) throw err;
   });
@@ -290,6 +293,9 @@ gulp.task('config', function(){
   file_map['world'] = 'world';
   file_map['eckert3-world'] = 'eckert3-world';
   file_map['china-cities'] = 'china-cities';
+  NATURAL_EARTH.forEach( (item) => {
+    pinyin_map[item['zhong_wen']] = item['label']
+  });  
   var config = {
     PINYIN_MAP: pinyin_map,
     FILE_MAP: file_map,

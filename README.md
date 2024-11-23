@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/echarts-countries-js.svg)](https://badge.fury.io/js/echarts-countries-js)
 
-It collects all geo-jsons in javascript of 210 countries and regions
+It collects all geo-jsons in javascript of 213 countries and regions
 and acts as a static asset to jupyter-echarts or your echarts collection.
 
 ## Installation
@@ -223,7 +223,6 @@ Cities:
 1. [苏丹](https://pyecharts.github.io/echarts-countries-js/dist/Sudan.js) (Sudan) 
 1. [苏里南](https://pyecharts.github.io/echarts-countries-js/dist/Suriname.js) (Suriname) 
 1. [史瓦济兰](https://pyecharts.github.io/echarts-countries-js/dist/Swaziland.js) (Swaziland) 
-1. [瑞士](https://pyecharts.github.io/echarts-countries-js/dist/Switzerland.js) (Switzerland) 
 1. [瑞典](https://pyecharts.github.io/echarts-countries-js/dist/Sweden.js) (Sweden) 
 1. [叙利亚](https://pyecharts.github.io/echarts-countries-js/dist/Syria.js) (Syria) 
 1. [塔吉克斯坦](https://pyecharts.github.io/echarts-countries-js/dist/Tajikistan.js) (Tajikistan) 
@@ -254,6 +253,10 @@ Cities:
 1. [也门](https://pyecharts.github.io/echarts-countries-js/dist/Yemen.js) (Yemen) 
 1. [赞比亚](https://pyecharts.github.io/echarts-countries-js/dist/Zambia.js) (Zambia) 
 1. [津巴布韦](https://pyecharts.github.io/echarts-countries-js/dist/Zimbabwe.js) (Zimbabwe) 
+1. [意大利](https://pyecharts.github.io/echarts-countries-js/dist/Italy.js) (Italy) 
+1. [哥伦比亚](https://pyecharts.github.io/echarts-countries-js/dist/Colombia.js) (Colombia) 
+1. [坦桑尼亚](https://pyecharts.github.io/echarts-countries-js/dist/Tanzania.js) (Tanzania) 
+1. [瑞士](https://pyecharts.github.io/echarts-countries-js/dist/Switzerland.js) (Switzerland) 
 
 
 ## Development
