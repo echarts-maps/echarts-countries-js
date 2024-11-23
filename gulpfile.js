@@ -11,6 +11,29 @@ var minify = require("gulp-minify");
 
 LOCATION = "./starbucks/json";
 
+NATURAL_EARTH = [
+  {
+    "country": "italy",
+    "label": "Italy",
+    "zhong_wen": "意大利"
+  },
+  {
+    "country": "colombia",
+    "label": "Colombia",
+    "zhong_wen": "哥伦比亚"
+  },
+  {
+    "country": "tanzania",
+    "label": "Tanzania",
+    "zhong_wen": "坦桑尼亚"
+  },
+  {
+    "country": "switzerland",
+    "label": "Switzerland",
+    "zhong_wen": "瑞士"
+  },
+];
+
 NAMES = {
   "Afghanistan": "阿富汗",
   "Albania": "阿尔巴尼亚",
@@ -224,7 +247,7 @@ NAMES = {
   "Zimbabwe": "津巴布韦"
 }
 
-gulp.task("default", ["readme", "world", "config", "template","colombia", "italy", "switzerland", "tanzania"], function() {
+gulp.task("default", ["readme", "world", "config", "template","naturalEarth"], function() {
   glob(LOCATION + '/*.json', function(err, files){
     if(err) throw err;
     files.forEach( (filePath) => {
@@ -303,14 +326,11 @@ gulp.task('template', function(){
     countryFiles.push('echarts-countries-js/world.js');
     countryNames.push('china');
     countryNames.push('world');
-    countryFiles.push('echarts-countries-js/Switzerland.js');
-    countryNames.push('瑞士');
-    countryFiles.push('echarts-countries-js/Italy.js');
-    countryNames.push('意大利');
-    countryFiles.push('echarts-countries-js/Tanzania.js');
-    countryNames.push('坦桑尼亚');
-    countryFiles.push('echarts-countries-js/Colombia.js');
-    countryNames.push('哥伦比亚');
+    NATURAL_EARTH.forEach( (item) => {
+      countryFiles.push('echarts-countries-js/' + item['label'] + '.js');
+      countryNames.push(item['zhong_wen']);
+
+    });
     countryFiles.push('echarts-countries-js/eckert3-world.js');
     countryNames.push('eckert3-world');
     countryFiles.push('echarts-countries-js/china-cities.js');
@@ -325,6 +345,19 @@ gulp.task('template', function(){
   });
 });
 
+gulp.task('naturalEarth', function(){
+  NATURAL_EARTH.forEach( (item) => {
+    maker.makeJs('geojson/shape-with-internal-borders/'+item['country']+ '.geojson', item['label'] + '.js', item['zhong_wen']);
+    gulp.src(item['label'] + '.js', {base: '.'})
+	  .pipe(minify({
+        noSource: true,
+	    ext: { min: ".js"}
+	  }))
+	  .pipe(gulp.dest('echarts-countries-js'));
+    
+  });
+})
+/*
 gulp.task('switzerland', function() {
   maker.makeJs('geojson/shape-with-internal-borders/switzerland.geojson', 'Switzerland.js', '瑞士');
   gulp.src('Switzerland.js', {base: '.'})
@@ -335,15 +368,6 @@ gulp.task('switzerland', function() {
 	.pipe(gulp.dest('echarts-countries-js'));
 });
 
-gulp.task('italy', function() {
-  maker.makeJs('geojson/shape-with-internal-borders/italy.geojson', 'Italy.js', '意大利');
-  gulp.src('Italy.js', {base: '.'})
-	.pipe(minify({
-      noSource: true,
-	  ext: { min: ".js"}
-	}))
-	.pipe(gulp.dest('echarts-countries-js'));
-});
 gulp.task('tanzania', function() {
   maker.makeJs('geojson/shape-with-internal-borders/tanzania.geojson', 'Tanzania.js', '坦桑尼亚');
   gulp.src('Tanzania.js', {base: '.'})
@@ -363,7 +387,7 @@ gulp.task('colombia', function() {
 	}))
 	.pipe(gulp.dest('echarts-countries-js'));
 });
-
+*/
 gulp.task('world', function(){
   gulp.src(['./node_modules/echarts/map/js/world.js', './node_modules/echarts/map/js/china.js'])
     .pipe(rename({dirname: ''}))
