@@ -268,9 +268,10 @@ $ gulp
 
 ## Credit and geojson source
 
-[pissang](https://github.com/pissang) and his [starbucks](https://github.com/pissang/starbucks) project.
+Italy, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 
-Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
+Other maps come from [pissang](https://github.com/pissang) and his [starbucks](https://github.com/pissang/starbucks) project.
+
 
 ## License
 
