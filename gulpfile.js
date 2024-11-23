@@ -306,6 +306,7 @@ gulp.task('template', function(){
     countryNames.push('china');
     countryNames.push('world');
     countryFiles.push('echarts-countries-js/Switzerland.js');
+    countryFiles.push('echarts-countries-js/Italy.js');
     countryNames.push('瑞士');
     countryNames.push('意大利');
     countryFiles.push('echarts-countries-js/eckert3-world.js');
