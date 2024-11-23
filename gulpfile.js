@@ -32,6 +32,11 @@ NATURAL_EARTH = [
     "label": "Switzerland",
     "zhong_wen": "瑞士"
   },
+  {
+    "country": "nauru",
+    "label": "Nauru",
+    "zhong_wen": "瑙鲁"
+  }
 ];
 
 NAMES = {
