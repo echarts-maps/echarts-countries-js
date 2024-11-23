@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/echarts-countries-js.svg)](https://badge.fury.io/js/echarts-countries-js)
 
-It collects all geo-jsons in javascript of 213 countries and regions
+It collects all geo-jsons in javascript of 212 countries and regions
 and acts as a static asset to jupyter-echarts or your echarts collection.
 
 ## Installation
@@ -135,7 +135,6 @@ Cities:
 1. [伊朗](https://pyecharts.github.io/echarts-countries-js/dist/Islamic_Republic_of_Iran.js) (Islamic Republic of Iran) 
 1. [马恩岛](https://pyecharts.github.io/echarts-countries-js/dist/Isle_of_Man.js) (Isle of Man) 
 1. [以色列](https://pyecharts.github.io/echarts-countries-js/dist/Israel.js) (Israel) 
-1. [意大利](https://pyecharts.github.io/echarts-countries-js/dist/Italy.js) (Italy) 
 1. [牙买加](https://pyecharts.github.io/echarts-countries-js/dist/Jamaica.js) (Jamaica) 
 1. [日本](https://pyecharts.github.io/echarts-countries-js/dist/Japan.js) (Japan) 
 1. [泽西](https://pyecharts.github.io/echarts-countries-js/dist/Jersey.js) (Jersey) 

@@ -103,7 +103,6 @@ NAMES = {
   "Islamic Republic of Iran": "伊朗",
   "Isle of Man": "马恩岛",
   "Israel": "以色列",
-  "Italy": "意大利",
   "Jamaica": "牙买加",
   "Japan": "日本",
   "Jersey": "泽西",
@@ -227,7 +226,7 @@ NAMES = {
   "Zimbabwe": "津巴布韦"
 }
 
-gulp.task("default", ["readme", "world", "config", "template"], function() {
+gulp.task("default", ["readme", "world", "config", "template", "italy", "switzerland"], function() {
   glob(LOCATION + '/*.json', function(err, files){
     if(err) throw err;
     files.forEach( (filePath) => {
@@ -308,6 +307,7 @@ gulp.task('template', function(){
     countryNames.push('world');
     countryFiles.push('echarts-countries-js/Switzerland.js');
     countryNames.push('瑞士');
+    countryNames.push('意大利');
     countryFiles.push('echarts-countries-js/eckert3-world.js');
     countryNames.push('eckert3-world');
     countryFiles.push('echarts-countries-js/china-cities.js');
@@ -325,6 +325,16 @@ gulp.task('template', function(){
 gulp.task('switzerland', function() {
   maker.makeJs('geojson/shape-with-internal-borders/switzerland.geojson', 'Switzerland.js', '瑞士');
   gulp.src('Switzerland.js', {base: '.'})
+	.pipe(minify({
+      noSource: true,
+	  ext: { min: ".js"}
+	}))
+	.pipe(gulp.dest('echarts-countries-js'));
+});
+
+gulp.task('italy', function() {
+  maker.makeJs('geojson/shape-with-internal-borders/italy.geojson', 'Italy.js', '意大利');
+  gulp.src('Italy.js', {base: '.'})
 	.pipe(minify({
       noSource: true,
 	  ext: { min: ".js"}
