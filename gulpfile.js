@@ -36,6 +36,11 @@ NATURAL_EARTH = [
     "country": "nauru",
     "label": "Nauru",
     "zhong_wen": "瑙鲁"
+  },
+  {
+    "country": "fiji",
+    "label": "Fiji",
+    "zhong_wen": "斐济"
   }
 ];
 
@@ -104,7 +109,6 @@ NAMES = {
   "Falkland Islands": "福克兰群岛",
   "Faroe Islands": "法罗群岛",
   "Federated States of Micronesia": "密克罗尼西亚联邦",
-  "Fiji": "斐济",
   "Finland": "芬兰",
   "France": "法国",
   "Gabon": "加蓬",

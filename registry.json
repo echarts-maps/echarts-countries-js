@@ -64,7 +64,6 @@
         "福克兰群岛": "Falkland_Islands",
         "法罗群岛": "Faroe_Islands",
         "密克罗尼西亚联邦": "Federated_States_of_Micronesia",
-        "斐济": "Fiji",
         "芬兰": "Finland",
         "法国": "France",
         "加蓬": "Gabon",
@@ -213,7 +212,8 @@
         "哥伦比亚": "Colombia",
         "坦桑尼亚": "Tanzania",
         "瑞士": "Switzerland",
-        "瑙鲁": "Nauru"
+        "瑙鲁": "Nauru",
+        "斐济": "Fiji"
     },
     "FILE_MAP": {
         "Afghanistan": "Afghanistan",
@@ -280,7 +280,6 @@
         "Falkland_Islands": "Falkland_Islands",
         "Faroe_Islands": "Faroe_Islands",
         "Federated_States_of_Micronesia": "Federated_States_of_Micronesia",
-        "Fiji": "Fiji",
         "Finland": "Finland",
         "France": "France",
         "Gabon": "Gabon",

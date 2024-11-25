@@ -108,7 +108,6 @@ Cities:
 1. [福克兰群岛](https://echarts-maps.github.io/echarts-countries-js/preview.html#福克兰群岛) ([Falkland Islands](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Falkland_Islands.js)) 
 1. [法罗群岛](https://echarts-maps.github.io/echarts-countries-js/preview.html#法罗群岛) ([Faroe Islands](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Faroe_Islands.js)) 
 1. [密克罗尼西亚联邦](https://echarts-maps.github.io/echarts-countries-js/preview.html#密克罗尼西亚联邦) ([Federated States of Micronesia](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Federated_States_of_Micronesia.js)) 
-1. [斐济](https://echarts-maps.github.io/echarts-countries-js/preview.html#斐济) ([Fiji](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Fiji.js)) 
 1. [芬兰](https://echarts-maps.github.io/echarts-countries-js/preview.html#芬兰) ([Finland](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Finland.js)) 
 1. [法国](https://echarts-maps.github.io/echarts-countries-js/preview.html#法国) ([France](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/France.js)) 
 1. [加蓬](https://echarts-maps.github.io/echarts-countries-js/preview.html#加蓬) ([Gabon](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Gabon.js)) 
@@ -258,6 +257,7 @@ Cities:
 1. [坦桑尼亚](https://echarts-maps.github.io/echarts-countries-js/preview.html#坦桑尼亚) ([Tanzania](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Tanzania.js)) 
 1. [瑞士](https://echarts-maps.github.io/echarts-countries-js/preview.html#瑞士) ([Switzerland](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Switzerland.js)) 
 1. [瑙鲁](https://echarts-maps.github.io/echarts-countries-js/preview.html#瑙鲁) ([Nauru](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Nauru.js)) 
+1. [斐济](https://echarts-maps.github.io/echarts-countries-js/preview.html#斐济) ([Fiji](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Fiji.js)) 
 
 ## Development
 
@@ -269,7 +269,7 @@ $ gulp
 
 ## Credit and geojson source
 
-Italy, Tanzania, Colombia, Nauru, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
+Italy, Tanzania, Colombia, Nauru, Fiji, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 
 Other maps come from [pissang](https://github.com/pissang) and his [starbucks](https://github.com/pissang/starbucks) project.
 
