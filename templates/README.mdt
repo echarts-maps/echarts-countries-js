@@ -49,6 +49,8 @@ Cities:
 ## Development
 
 ```shell
+$ git submodule update --init --recursive # checkout pissang's starbucks repo
+$
 $ npm install
 $ gulp switzerland # as this is special fix
 $ gulp
