@@ -1,3 +1,10 @@
+GLOBALS = {
+    "斐济": {"center": [
+          178.47489094528436,
+          -17.82254817978705
+    ],"zoom": 60}    
+}
+
 function make_map(cityname, dom_id){
   achart = echarts.init(document.getElementById(dom_id));
   var option =  {
@@ -31,15 +38,22 @@ function make_map(cityname, dom_id){
     ],
     "backgroundColor": "#fff",
     "series": [
-      {
+    ]
+  };
+  series = {
 	"mapType": cityname,
 	"data": [],
 	"name": "",
 	"symbol": "circle",
 	"type": "map",
 	"roam": true
-      }
-    ]
   };
+    additional = {};
+    if(cityname in GLOBALS){
+	additional = GLOBALS[cityname]
+    }
+    option.series.push({...series,
+			...additional})
+
   achart.setOption(option);
 }
