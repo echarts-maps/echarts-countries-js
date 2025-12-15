@@ -2,7 +2,8 @@ GLOBALS = {
     "斐济": {"center": [
           178.47489094528436,
           -17.82254817978705
-    ],"zoom": 60}    
+    ],"zoom": 60},
+    "汤加": {"zoom": 2}
 }
 
 function make_map(cityname, dom_id){
