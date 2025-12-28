@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/chfw/echarts-countries-js#readme",
   "devDependencies": {
-    "d3": "^5.9.2",
+    "d3": "^7.6.1",
     "d3-geo": "^1.11.3",
     "echarts": "^4.0.2",
     "echarts-mapmaker": "^1.0.14",
