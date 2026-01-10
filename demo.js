@@ -3,7 +3,8 @@ GLOBALS = {
           178.47489094528436,
           -17.82254817978705
     ],"zoom": 60},
-    "汤加": {"zoom": 2}
+    "汤加": {"zoom": 2},
+    "托克劳": {"zoom": 20}    
 }
 
 function make_map(cityname, dom_id){
