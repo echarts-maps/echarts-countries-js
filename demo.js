@@ -1,11 +1,20 @@
-GLOBALS = {
+CITIES = {
     "斐济": {"center": [
           178.47489094528436,
           -17.82254817978705
     ],"zoom": 60},
     "汤加": {"zoom": 2},
-    "托克劳": {"zoom": 20}    
-}
+    "托克劳": {"zoom": 20},
+    "马尔代夫": {"zoom": 30}, 
+    "基里巴斯": {"center": [
+	-157.47485482439654,
+        1.963314847162593
+    ],"zoom": 20},
+    "托克劳": {"center": [
+	-157.47485482439654,
+        1.963314847162593
+    ],"zoom": 40}
+};
 
 function make_map(cityname, dom_id){
   achart = echarts.init(document.getElementById(dom_id));
@@ -51,8 +60,10 @@ function make_map(cityname, dom_id){
 	"roam": true
   };
     additional = {};
-    if(cityname in GLOBALS){
-	additional = GLOBALS[cityname]
+    console.log(cityname);
+    if(cityname in CITIES){
+	additional = CITIES[cityname];
+	console.log(additional)
     }
     option.series.push({...series,
 			...additional})
