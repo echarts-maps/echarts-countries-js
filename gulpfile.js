@@ -41,6 +41,11 @@ NATURAL_EARTH = [
     "country": "fiji",
     "label": "Fiji",
     "zhong_wen": "斐济"
+  },
+  {
+    "country": "tokelau",
+    "label": "Tokelau",
+    "zhong_wen": "托克劳"
   }
 ];
 
@@ -231,7 +236,6 @@ NAMES = {
   "The Gambia": "冈比亚",
   "The Netherlands": "荷兰",
   "Togo": "多哥",
-  "Tokelau": "托克劳",
   "Tonga": "汤加",
   "Trinidad and Tobago": "特立尼达和多巴哥",
   "Tunisia": "突尼斯",

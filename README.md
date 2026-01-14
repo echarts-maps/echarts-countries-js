@@ -230,7 +230,6 @@ Cities:
 1. [冈比亚](https://echarts-maps.github.io/echarts-countries-js/preview.html#冈比亚) ([The Gambia](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/The_Gambia.js)) 
 1. [荷兰](https://echarts-maps.github.io/echarts-countries-js/preview.html#荷兰) ([The Netherlands](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/The_Netherlands.js)) 
 1. [多哥](https://echarts-maps.github.io/echarts-countries-js/preview.html#多哥) ([Togo](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Togo.js)) 
-1. [托克劳](https://echarts-maps.github.io/echarts-countries-js/preview.html#托克劳) ([Tokelau](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Tokelau.js)) 
 1. [汤加](https://echarts-maps.github.io/echarts-countries-js/preview.html#汤加) ([Tonga](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Tonga.js)) 
 1. [特立尼达和多巴哥](https://echarts-maps.github.io/echarts-countries-js/preview.html#特立尼达和多巴哥) ([Trinidad and Tobago](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Trinidad_and_Tobago.js)) 
 1. [突尼斯](https://echarts-maps.github.io/echarts-countries-js/preview.html#突尼斯) ([Tunisia](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Tunisia.js)) 
@@ -258,6 +257,7 @@ Cities:
 1. [瑞士](https://echarts-maps.github.io/echarts-countries-js/preview.html#瑞士) ([Switzerland](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Switzerland.js)) 
 1. [瑙鲁](https://echarts-maps.github.io/echarts-countries-js/preview.html#瑙鲁) ([Nauru](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Nauru.js)) 
 1. [斐济](https://echarts-maps.github.io/echarts-countries-js/preview.html#斐济) ([Fiji](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Fiji.js)) 
+1. [托克劳](https://echarts-maps.github.io/echarts-countries-js/preview.html#托克劳) ([Tokelau](https://raw.githubusercontent.com/echarts-maps/echarts-countries-js/refs/heads/master/echarts-countries-js/Tokelau.js)) 
 
 ## Development
 
@@ -270,6 +270,8 @@ $ gulp
 ```
 
 ## Credit and geojson source
+
+Tokelau map is drawn by me. And I would put it under ODbL license.
 
 Italy, Tanzania, Colombia, Nauru, Fiji, Switzerland map comes from [natural earth data](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 

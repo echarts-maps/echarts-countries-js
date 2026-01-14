@@ -186,7 +186,6 @@
         "冈比亚": "The_Gambia",
         "荷兰": "The_Netherlands",
         "多哥": "Togo",
-        "托克劳": "Tokelau",
         "汤加": "Tonga",
         "特立尼达和多巴哥": "Trinidad_and_Tobago",
         "突尼斯": "Tunisia",
@@ -213,7 +212,8 @@
         "坦桑尼亚": "Tanzania",
         "瑞士": "Switzerland",
         "瑙鲁": "Nauru",
-        "斐济": "Fiji"
+        "斐济": "Fiji",
+        "托克劳": "Tokelau"
     },
     "FILE_MAP": {
         "Afghanistan": "Afghanistan",
@@ -402,7 +402,6 @@
         "The_Gambia": "The_Gambia",
         "The_Netherlands": "The_Netherlands",
         "Togo": "Togo",
-        "Tokelau": "Tokelau",
         "Tonga": "Tonga",
         "Trinidad_and_Tobago": "Trinidad_and_Tobago",
         "Tunisia": "Tunisia",
